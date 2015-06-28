@@ -2,8 +2,9 @@
 -------
 Authors
 -------
-Karim Ali    
+Kareem Ali
 Ahmad Hassan 
+Mina Sokrat
 
 ----------------
 C implementation
