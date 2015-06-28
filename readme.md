@@ -2,9 +2,9 @@
 -------
 #**Authors**
 -------
-Kareem Ali
-Ahmad Hassan 
-Mina Sokrat
+* Kareem Ali
+* Ahmad Hassan 
+* Mina Sokrat
 
 ----------------
 #**C++ implementation**
@@ -19,12 +19,12 @@ are available in the same folder make sure you include them.
 #**Running**
 -------
 Make sure that the folders "negative train", "Positive train" and "test" are all available in
-the same folder and simpy run Facedetector.py
+the same folder and simpy run FaceRecognizer.py
 
 ------
 #**Output**
 ------
-The output is total runtime in seconds
-Precision
-Recall
-F1 Measure
+1. The output is total runtime in seconds
+2. Precision
+3. Recall
+3. F1 Measure
