@@ -55,3 +55,8 @@ docs/_build/
 
 # PyBuilder
 target/
+
+#training and testing files
+test/
+negative train/
+Positive train/
