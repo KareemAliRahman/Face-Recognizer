@@ -1,13 +1,13 @@
 
 -------
-Authors
+#**Authors**
 -------
 Kareem Ali
 Ahmad Hassan 
 Mina Sokrat
 
 ----------------
-C implementation
+#**C++ implementation**
 ----------------
 In order to overcome the pythons huge run time limitations we implemented the most
 exhaustive function which is the Lbp in c++ and interfaced it with our python impl-
@@ -16,13 +16,13 @@ image. The shared library as will as a makefile you can edit for your machine re
 are available in the same folder make sure you include them.
 
 -------
-Running
+#**Running**
 -------
 Make sure that the folders "negative train", "Positive train" and "test" are all available in
 the same folder and simpy run Facedetector.py
 
 ------
-Output
+#**Output**
 ------
 The output is total runtime in seconds
 Precision
