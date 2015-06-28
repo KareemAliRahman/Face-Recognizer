@@ -7,14 +7,15 @@ from lbp import lbp
 def _count(array,value):
 	return sum(map(lambda x:1 if(x==value) else 0,array))
 
-def precision(results):
-	return count(results,1)/float(len(results))
+def precision(results,trueresults):
+	return sum(map((lambda x,y:1 if(x==y==1) else 0),results,trueresults))/float(len(results))
+
 
 def recall(results,trueresults):
-	return count(trueresults,1)/float(count(results,1))
+	return sum(map((lambda x,y:1 if(x==y==1) else 0),results,trueresults))/float(count(trueresults,1))
 
 def f1(results,trueresults):
-	return precision(results)*recall(results,trueresults)/(precision(results)+recall(results,trueresults))
+	return precision(results,trueresults)*recall(results,trueresults)/(precision(results,trueresults)+recall(results,trueresults))
 
 
 count=_count
@@ -58,7 +59,7 @@ def mainMethod():
 
 	print "Took: %.3f s \nPrecision: %.2f \nRecall: %.2f \nF1 Measure: %.2f" %(
 	 	time.time()-currenttime,
-	 	precision(predictions),
+	 	precision(predictions,testresults),
 	 	recall(predictions,testresults),
 	 	f1(predictions,testresults))
 
